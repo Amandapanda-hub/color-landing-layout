@@ -2,12 +2,22 @@ import React from 'react';
 import { BsFacebook, BsTwitter, BsLinkedin } from 'react-icons/bs';
 
 export default function ContactBody() {
-  const options = ["Option 1", "Option 2", "Option 3", "Option 4", "Option 5", "Option 6", "Option 7", "Option 8", "Option 9"];
-  
+  const options = [
+    "Personal Health Assessment",
+    "Holistic Wellness Coaching",
+    "Mindfulness and Meditation Guidance",
+    "Nutritional Counseling",
+    "Exercise and Physical Well-being",
+    "Stress Management",
+    "Sleep Improvement Techniques",
+    "Emotional and Mental Well-being",
+    "Holistic Healing Practices"
+  ];
+    
   return (
     <div className="flex flex-col md:flex-row justify-center items-start mt-10 mb-10 md:mx-auto px-4 md:px-0" style={{ maxWidth: '1200px' }}>
       <div className="flex flex-col items-start w-full md:w-2/5 md:mr-4 p-6 space-y-5">
-        <h2 className="text-3xl font-bold mb-6">Company Name</h2>
+        <h2 className="text-3xl font-bold mb-6">WellVibe</h2>
         <p>1234 Street Name, City, State</p>
         <p>(123) 456-7890</p>
         <p>email@company.com</p>
@@ -22,7 +32,7 @@ export default function ContactBody() {
       <div className="flex flex-col items-start w-full md:w-3/5 md:ml-4 p-6">
         <form>
           <div>
-            <label>Name (required)</label>
+          <label>Name <span className="text-gray-500 opacity-50">(required)</span></label>
             <div className="flex flex-col md:flex-row space-x-0 md:space-x-4 mt-2">
               <input className="w-full py-2 px-3 rounded bg-gray-200 border-gray-400 mb-2 md:mb-0" type="text" placeholder="First Name" required/>
               <input className="w-full py-2 px-3 rounded bg-gray-200 border-gray-400" type="text" placeholder="Last Name" required/>
@@ -30,12 +40,12 @@ export default function ContactBody() {
           </div>
 
           <div className="mt-4">
-            <label>Email (required)</label>
+          <label>Email <span className="text-gray-500 opacity-50">(required)</span></label>
             <input className="w-full py-2 px-3 rounded bg-gray-200 border-gray-400 mt-2" type="email" placeholder="Your Email" required/>
           </div>
 
           <div className="mt-4">
-            <label>I'm interested in help with... (required)</label>
+          <label>I'm interested in help with... <span className="text-gray-500 opacity-50">(required)</span></label>
             <div className="flex flex-col mt-2 space-y-2">
               {/* Replace "Option" with your actual options */}
               {options.map((option, i) => (

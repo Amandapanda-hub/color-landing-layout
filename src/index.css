@@ -25,3 +25,7 @@ code {
     height: calc(100vh - -8rem); /* Adjust 5rem to the amount of space you want to give on the top and bottom combined */
   }
 }
+
+/* .required-text {
+  color: rgba(128, 128, 128, 0.5);
+} */
