@@ -18,3 +18,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
+
+/* Custom utility for MacBook screen size */
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  .macbook-h-screen {
+    height: calc(100vh - -8rem); /* Adjust 5rem to the amount of space you want to give on the top and bottom combined */
+  }
+}

@@ -4,16 +4,16 @@ import { Link } from 'react-router-dom';
 export default function Hero() {
   return (
     <>
-      <div className='flex justify-center items-center h-[42rem] bg-[#F9FBE7]'>
+      <div className='flex justify-center items-center h-[20rem] sm:h-[30rem] md:h-[36rem] lg:hero-mac xl:h-[42rem] bg-[#F9FBE7]'>
         <div className='text-center'>
-          <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-[4rem] md:leading-[5rem] lg:leading-[6rem]' style={{ whiteSpace: 'pre-line' }}>
+          <h1 className='text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-[4rem] md:leading-[5rem] lg:leading-[5.5rem] xl:leading-[6rem]' style={{ whiteSpace: 'pre-line' }}>
             Gear Up to Reign Over{'\n'}
             Your Health Journey.
           </h1>
           <Link
             className='text-black hover:text-[#A27943] text-xl underline'
             style={{ textUnderlineOffset: '0.2em' }}
-            to='/contact' 
+            to='/contact'
           >
             Reserve Your Wellness Assessment Today.
           </Link>
